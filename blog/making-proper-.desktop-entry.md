@@ -19,7 +19,7 @@ After doing such you will be left with something like that: `WM_CLASS(STRING) = 
 
 ## Put following content into newly created `.desktop` file.
 StartupWMClass's value is one of the strings obtained by executing `xprop psst`. Which one? The one that works for you. But probably the latest to the right.
-```
+```properties
 [Desktop Entry]
 Encoding=UTF-8
 Name=Psst
