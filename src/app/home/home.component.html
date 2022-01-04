@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let page of posts | async">
+       aaa <a [routerLink]="page.route">{{page.title}}</a>
+    </li>
+</ul>
