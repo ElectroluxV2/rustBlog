@@ -93,3 +93,12 @@ handleUnknownRoute: "/blog/___UNPUBLISHED___ky09jqxf_3obeXfv83aJP8bv0DJgOECx8cie
 
 
 
+handleUnknownRoute: "/styles.css", 404:""handleUnknownRoute: "/runtime.js", 404:""handleUnknownRoute: "/polyfills.js", 404:""handleUnknownRoute: "/vendor.js", 404:""handleUnknownRoute: "/main.js", 404:""
+
+
+
+
+----------------------------------Using stored unhandled routes!.   To discover new routes in the angular app use "npm run scully -- --scanRoutes"----------------------------------
+
+
+

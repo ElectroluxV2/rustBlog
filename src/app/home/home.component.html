@@ -1,5 +1,8 @@
-<ul>
+<h1 class="title">Choose your enemy</h1>
+<article class="big-menu">
+  <ul class="links">
     <li *ngFor="let page of posts | async">
-       aaa <a [routerLink]="page.route">{{page.title}}</a>
+      <a [routerLink]="page.route">{{page.title}}</a>
     </li>
-</ul>
+  </ul>
+</article>
