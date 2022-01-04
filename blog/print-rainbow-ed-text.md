@@ -1,7 +1,7 @@
 ---
 title: Print rainbow-ed text
 description: blog description
-published: false
+published: true
 ---
 
 # Print rainbow-ed text
