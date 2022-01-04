@@ -5,8 +5,9 @@
 /tmp
 /out-tsc
 
-# Logs
+# Scully
 scully.log
+scully-routes.json
 
 # Only exists if Bazel was run
 /bazel-out
