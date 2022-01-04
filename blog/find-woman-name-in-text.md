@@ -12,10 +12,8 @@ We assume that word that starts with big letter and ends with small letter `a` i
 Input: `Alicja is dumb.`<br>
 Output: `Found woman name "Alicja"`
 <br>
-<br>
 Input: `Marcin is my the richest fellow content maker.`<br>
 Output: `No woman name in text`
-<br>
 <br>
 Input: `Laura is my bro <3`<br>
 Output: `Found target name, exiting`
@@ -37,3 +35,5 @@ fn get_woman_name_from_text(text: &str) -> Option<T> { } // Returns woman name f
 ```rust
 fn print_message_based_on_name_presence(name: Option<T>) { } // Prints message
 ```
+
+Your program must use Option and Match.
