@@ -20,7 +20,7 @@ jobs:
           npm run scully
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.server }}
           username: ${{ secrets.username }}
