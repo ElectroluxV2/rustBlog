@@ -5,9 +5,17 @@
   width: clamp(16rem, 90vw, 100rem);
   margin: 0 auto;
 
+  #fill {
+    margin-top: auto;
+  }
+
+  .notice {
+    color: var(--color-prettylights-syntax-brackethighlighter-unmatched);
+    padding-bottom: 1.25em;
+  }
+
   .copy {
     padding: 0.4em;
-    margin-top: auto;
     text-align: center;
     color: var(--color-neutral-muted);
   }
