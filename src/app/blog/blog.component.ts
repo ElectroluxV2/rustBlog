@@ -1,7 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { ActivatedRoute, Router, ROUTES } from '@angular/router';
-
-declare var ng: any;
+import { AfterViewChecked, Component, ViewEncapsulation } from '@angular/core';
+import { HighlightService } from "../highlight.service";
 
 @Component({
   selector: 'app-blog',
@@ -10,8 +8,10 @@ declare var ng: any;
   preserveWhitespaces: true,
   encapsulation: ViewEncapsulation.Emulated
 })
-export class BlogComponent implements OnInit {
-  ngOnInit() { }
+export class BlogComponent implements AfterViewChecked {
+  constructor(private highlightService: HighlightService) { }
 
-  constructor(private router: Router, private route: ActivatedRoute) { }
+  public ngAfterViewChecked(): void {
+    this.highlightService.highlightAll();
+  }
 }
