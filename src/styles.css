@@ -1037,7 +1037,7 @@ html, body {
   vertical-align: middle;
 }
 
-.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox {
+.markdown-body .contains-task-list[dir=rtl] .task-list-item-checkbox {
   margin: 0 -1.6em .25em .2em;
 }
 
