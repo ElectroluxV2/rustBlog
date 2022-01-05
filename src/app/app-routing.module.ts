@@ -5,12 +5,12 @@ const routes: Routes = [{
   path: 'blog',
   loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
 }, {
-  path: '',
+  path: '**',
   loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
 }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', initialNavigation: 'enabledBlocking' })],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }

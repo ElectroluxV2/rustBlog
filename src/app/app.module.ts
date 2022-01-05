@@ -13,7 +13,10 @@ import { environment } from '../environments/environment';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ScullyLibModule,
+    ScullyLibModule.forRoot({
+      useTransferState: true,
+      alwaysMonitor: true
+    }),
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
