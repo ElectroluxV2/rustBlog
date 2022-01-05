@@ -2,7 +2,7 @@
 <article class="big-menu">
   <ul class="links">
     <li *ngFor="let page of posts | async">
-      <a [routerLink]="page.route + '/.'">{{page.title}}</a>
+      <a [href]="page.route + '/.'">{{page.title}}</a>
     </li>
   </ul>
 </article>
